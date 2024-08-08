@@ -19,11 +19,11 @@ export default function SignUp() {
             router.push("/login")
         }
         catch(error:any){
-            console.log("signUp failed",error.message)
+            console.log("signUp failed",error)
         }
     }
     useEffect(() => {
-        if(user.email.length > 0 && user.password.length > 0 && user.username.length >0 ){
+        if(user.email.length > 0 && user.password.length > 0 && user.username.length > 0 ){
             setButton(false);
         }else{
             setButton(true)
